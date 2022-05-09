@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul class="list">
+      <% for( let cliente of clientes ) { %>
+        <li class="list__item">
+          <%= cliente.name %> | <%= cliente.email %>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
